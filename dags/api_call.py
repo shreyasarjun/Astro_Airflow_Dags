@@ -1,6 +1,7 @@
 from airflow.sdk import dag, task, Variable
 from airflow.providers.http.operators.http import HttpOperator
-from airflow.hooks.base import BaseHook
+from airflow.sdk.bases.hook import BaseHook
+
 from datetime import datetime
 import os
 
